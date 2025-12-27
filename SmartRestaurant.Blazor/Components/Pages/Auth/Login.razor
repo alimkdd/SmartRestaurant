@@ -1,0 +1,159 @@
+﻿@page "/"
+@using SmartRestaurant.Application.Dtos.Requests
+@using SmartRestaurant.Application.Interfaces
+@using System.Timers
+@using SmartRestaurant.Application.Interfaces.Abstractions.Caching
+@using Blazored.FluentValidation
+@inject NavigationManager NavigationManager
+@inject AuthenticationStateProvider AuthStateProvider
+@inject IAuthService AuthService
+@inject ICacheService CacheService
+
+<div class="login-container">
+    <div class="login-card">
+        <div class="login-header">
+            <h2>🍽️ Smart Restaurant</h2>
+            <p>Sign in to continue</p>
+        </div>
+
+        <EditForm Model="@loginModel" OnValidSubmit="HandleLogin">
+            <FluentValidationValidator />
+
+            <div class="form-group mb-3">
+                <label for="email">Email Address</label>
+                <InputText id="email" class="form-control" @bind-Value="loginModel.Email" />
+                <ValidationMessage For="@(() => loginModel.Email)" />
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="password">Password</label>
+                <InputText id="password" type="password" class="form-control" @bind-Value="loginModel.Password" />
+                <ValidationMessage For="@(() => loginModel.Password)" />
+            </div>
+
+            @if (!string.IsNullOrEmpty(errorMessage))
+            {
+                <div class="alert alert-danger">
+                    <strong>⚠️ Error:</strong> @errorMessage
+                </div>
+            }
+
+            @if (lockoutRemainingSeconds > 0)
+            {
+                <div class="alert alert-warning">
+                    Too many failed attempts. Try again in <strong>@lockoutRemainingSeconds</strong> seconds.
+                </div>
+            }
+
+            <button type="submit" class="btn btn-primary w-100" disabled="@isLockedOut">
+                @if (isLoading)
+                {
+                    <span class="spinner-border spinner-border-sm me-2"></span>
+                }
+                else
+                {
+                    <span>🔐 Sign In</span>
+                }
+            </button>
+        </EditForm>
+
+        <div class="login-footer mt-3">
+            <p>Don't have an account? <a href="/register">Sign up</a></p>
+        </div>
+    </div>
+</div>
+
+@code {
+    private LoginRequestModel loginModel = new();
+    private bool isLoading;
+    private bool isLockedOut;
+    private string? errorMessage;
+    private int lockoutRemainingSeconds;
+    private System.Timers.Timer? lockoutTimer;
+
+    private const string LoginAttemptKeyPrefix = "login_attempt_";
+
+    private async Task HandleLogin()
+    {
+        if (lockoutRemainingSeconds > 0)
+            return;
+
+        isLoading = true;
+        errorMessage = null;
+
+        try
+        {
+            var ttl = await CacheService.GetLockoutTTL(loginModel.Email);
+
+            if (ttl.HasValue && ttl.Value.TotalSeconds > 0)
+            {
+                lockoutRemainingSeconds = (int)Math.Ceiling(ttl.Value.TotalSeconds);
+                StartLockoutTimer();
+                return;
+            }
+
+            var result = await AuthService.Login(loginModel);
+
+            if (result.Success)
+            {
+                await CacheService.ClearLoginAttempts(loginModel.Email);
+                await AuthStateProvider.GetAuthenticationStateAsync();
+
+                if (result.Role == "Admin")
+                    NavigationManager.NavigateTo("/admin", true);
+                else
+                    NavigationManager.NavigateTo("/menu", true);
+            }
+            else
+            {
+                var attemptsLeft = await CacheService.IncrementLoginAttempts(loginModel.Email);
+
+                if (attemptsLeft <= 0)
+                {
+                    var lockoutMinutes = CacheService.GetLockoutDuration();
+                    await CacheService.SetLockout(loginModel.Email, lockoutMinutes);
+                    lockoutRemainingSeconds = lockoutMinutes * 60;
+                    StartLockoutTimer();
+                    errorMessage = $"Too many failed attempts. Locked out for {lockoutMinutes} minutes.";
+                }
+                else
+                {
+                    errorMessage = result.ErrorMessage + $" ({attemptsLeft} attempts remaining)";
+                }
+            }
+        }
+        finally
+        {
+            isLoading = false;
+            await InvokeAsync(StateHasChanged);
+        }
+    }
+
+    private void StartLockoutTimer()
+    {
+        isLockedOut = true;
+        lockoutTimer?.Dispose();
+        lockoutTimer = new System.Timers.Timer(1000);
+        lockoutTimer.AutoReset = true;
+        lockoutTimer.Elapsed += (s, e) =>
+        {
+            if (lockoutRemainingSeconds > 0)
+            {
+                lockoutRemainingSeconds--;
+                InvokeAsync(StateHasChanged);
+            }
+            else
+            {
+                isLockedOut = false;
+                lockoutTimer?.Stop();
+                lockoutTimer?.Dispose();
+            }
+        };
+        lockoutTimer.Start();
+    }
+
+    public void Dispose()
+    {
+        lockoutTimer?.Dispose();
+    }
+}

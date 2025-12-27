@@ -1,0 +1,17 @@
+wwwroot\app.css
+wwwroot\css\Site.css
+wwwroot\css\bootstrap\bootstrap.min.css
+wwwroot\css\bootstrap\bootstrap.min.css.map
+wwwroot\favicon.png
+wwwroot\images\17dc536c-36c7-4245-b22f-6259417ef9e5.jpg
+wwwroot\images\62e0911f-9f33-47fc-b567-e8fa51401809.jpg
+wwwroot\images\caesar-salad.jpg
+wwwroot\images\cheese-burger.jpg
+wwwroot\images\chicken-burger.jpg
+wwwroot\images\favicon.png
+wwwroot\images\greek-salad.jpg
+wwwroot\images\margherita-pizza.jpg
+wwwroot\images\mushroom-soup.jpg
+wwwroot\images\pepperoni-pizza.jpg
+wwwroot\images\spaghetti-bolognese.jpg
+wwwroot\images\veggie-wrap.jpg

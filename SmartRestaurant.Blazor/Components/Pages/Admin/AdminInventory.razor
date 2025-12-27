@@ -1,0 +1,160 @@
+﻿@page "/admin/inventory"
+@attribute [Authorize(Roles = "Admin,Staff")]
+@using SmartRestaurant.Application.Interfaces
+@using SmartRestaurant.Application.Interfaces.Abstractions.AI
+@using SmartRestaurant.Application.Services.Inventory
+@inject IInventoryService InventoryService
+@inject IChatbotService ChatbotService
+
+<div class="inventory-header">
+    <h3>📦 Inventory Management</h3>
+    <p style="margin: 0.5rem 0 0 0; opacity: 0.9;">Track and manage your restaurant supplies</p>
+</div>
+
+@if (isLoading)
+{
+    <div class="loading-container">
+        <div class="loading-spinner"></div>
+    </div>
+}
+else
+{
+    <div style="background-color: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+            <div>
+                <h4 style="margin: 0;">Inventory Overview</h4>
+                <p style="margin: 0.5rem 0 0 0; color: #6c757d;">
+                    Total Items: <strong>@inventoryItems.Count</strong> |
+                    Low Stock: <strong style="color: #f39c12;">@inventoryItems.Count(i => i.Quantity < i.MinimumThreshold)</strong>
+                </p>
+            </div>
+            <button class="btn btn-info" @onclick="GetLowStockAIRecommendations" disabled="@isGeneratingRecommendations">
+                @if (isGeneratingRecommendations)
+                {
+                    <span>⏳ Generating...</span>
+                }
+                else
+                {
+                    <span>🤖 AI Suggestions for Low Stock</span>
+                }
+            </button>
+        </div>
+
+        @if (!inventoryItems.Any())
+        {
+            <div class="alert alert-info">
+                <p style="margin: 0;">No inventory items found. Add items to start tracking.</p>
+            </div>
+        }
+        else
+        {
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Status</th>
+                            <th>Name</th>
+                            <th>Quantity</th>
+                            <th>Unit</th>
+                            <th>Minimum Threshold</th>
+                            <th>Last Updated</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in inventoryItems.OrderBy(i => i.Quantity < i.MinimumThreshold ? 0 : 1))
+                        {
+                            var isLowStock = item.Quantity < item.MinimumThreshold;
+                            var stockPercentage = item.MinimumThreshold > 0
+                            ? item.Quantity / item.MinimumThreshold * 100
+                            : 100;
+
+                            <tr class="@(isLowStock ? "table-warning" : "")">
+                                <td>
+                                    @if (isLowStock)
+                                    {
+                                        <span style="color: #f39c12; font-size: 1.25rem;" title="Low Stock">⚠️</span>
+                                    }
+                                    else
+                                    {
+                                        <span style="color: #27ae60; font-size: 1.25rem;" title="In Stock">✓</span>
+                                    }
+                                </td>
+                                <td><strong>@item.Name</strong></td>
+                                <td>
+                                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                        <span style="font-weight: 600; color: @(isLowStock ? "#f39c12" : "#27ae60");">
+                                            @item.Quantity
+                                        </span>
+                                        @if (isLowStock)
+                                        {
+                                            <span style="font-size: 0.75rem; color: #f39c12; font-weight: 600;">
+                                                (LOW)
+                                            </span>
+                                        }
+                                    </div>
+                                    <div style="width: 100px; height: 6px; background-color: #e0e0e0; border-radius: 3px; margin-top: 0.25rem;">
+                                        <div style="width: @Math.Min(stockPercentage, 100)%; height: 100%; background-color: @(isLowStock ? "#f39c12" : "#27ae60"); border-radius: 3px; transition: width 0.3s ease;"></div>
+                                    </div>
+                                </td>
+                                <td>@item.Unit</td>
+                                <td>
+                                    <span style="background-color: #e0e0e0; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.875rem;">
+                                        @item.MinimumThreshold
+                                    </span>
+                                </td>
+                                <td style="color: #6c757d;">@item.LastUpdated.ToString("MMM dd, yyyy HH:mm")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    </div>
+
+    @if (!string.IsNullOrEmpty(aiSuggestions))
+    {
+        <div class="alert alert-info">
+            <h5 style="margin-bottom: 1rem;">🤖 AI Recommendations</h5>
+            <p style="white-space: pre-wrap; margin: 0;">@aiSuggestions</p>
+        </div>
+    }
+}
+
+@code {
+    private List<SmartRestaurant.Domain.Models.InventoryItem> inventoryItems = new();
+    private bool isLoading = true;
+    private bool isGeneratingRecommendations = false;
+    private string? aiSuggestions;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            inventoryItems = await InventoryService.GetAllAsync();
+        }
+        catch (Exception ex)
+        {
+            inventoryItems = new List<SmartRestaurant.Domain.Models.InventoryItem>();
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private async Task GetLowStockAIRecommendations()
+    {
+        var lowStock = inventoryItems.Where(i => i.Quantity < i.MinimumThreshold).ToList();
+
+        if (!lowStock.Any())
+        {
+            aiSuggestions = "Great news! All inventory items are currently above their minimum threshold. No immediate reordering needed.";
+            return;
+        }
+
+        isGeneratingRecommendations = true;
+        var prompt = $"These inventory items are low: {string.Join(", ", lowStock.Select(i => $"{i.Name} ({i.Quantity} {i.Unit}, minimum: {i.MinimumThreshold})"))}. Suggest reorder quantities and priority.";
+        aiSuggestions = await ChatbotService.Ask(prompt);
+        isGeneratingRecommendations = false;
+    }
+}

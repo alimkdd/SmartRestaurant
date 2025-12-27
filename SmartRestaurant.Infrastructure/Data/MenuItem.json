@@ -1,0 +1,238 @@
+[
+  {
+    "Name": "Margherita Pizza",
+    "Description": "Classic pizza with tomato, mozzarella, and basil",
+    "Price": 12.5,
+    "IsAvailable": true,
+    "Image": "images/margherita-pizza.jpg",
+    "Ingredients": [
+      {
+        "Name": "Tomato",
+        "Quantity": 0.2,
+        "Unit": "kg"
+      },
+      {
+        "Name": "Mozzarella",
+        "Quantity": 0.15,
+        "Unit": "kg"
+      },
+      {
+        "Name": "Basil",
+        "Quantity": 5,
+        "Unit": "pcs"
+      }
+    ]
+  },
+  {
+    "Name": "Caesar Salad",
+    "Description": "Romaine lettuce, croutons, parmesan, Caesar dressing",
+    "Price": 9.0,
+    "IsAvailable": true,
+    "Image": "images/caesar-salad.jpg",
+    "Ingredients": [
+      {
+        "Name": "Romaine Lettuce",
+        "Quantity": 0.1,
+        "Unit": "kg"
+      },
+      {
+        "Name": "Croutons",
+        "Quantity": 0.05,
+        "Unit": "kg"
+      },
+      {
+        "Name": "Parmesan",
+        "Quantity": 0.03,
+        "Unit": "kg"
+      }
+    ]
+  },
+  {
+    "Name": "Pepperoni Pizza",
+    "Description": "Pizza with pepperoni, mozzarella, and tomato sauce",
+    "Price": 14.0,
+    "IsAvailable": true,
+    "Image": "images/pepperoni-pizza.jpg",
+    "Ingredients": [
+      {
+        "Name": "Tomato Sauce",
+        "Quantity": 0.2,
+        "Unit": "kg"
+      },
+      {
+        "Name": "Mozzarella",
+        "Quantity": 0.15,
+        "Unit": "kg"
+      },
+      {
+        "Name": "Pepperoni",
+        "Quantity": 0.1,
+        "Unit": "kg"
+      }
+    ]
+  },
+  {
+    "Name": "Greek Salad",
+    "Description": "Cucumber, tomato, olives, feta cheese, red onion",
+    "Price": 10.0,
+    "IsAvailable": true,
+    "Image": "images/greek-salad.jpg",
+    "Ingredients": [
+      {
+        "Name": "Cucumber",
+        "Quantity": 0.1,
+        "Unit": "kg"
+      },
+      {
+        "Name": "Tomato",
+        "Quantity": 0.1,
+        "Unit": "kg"
+      },
+      {
+        "Name": "Feta Cheese",
+        "Quantity": 0.05,
+        "Unit": "kg"
+      },
+      {
+        "Name": "Olives",
+        "Quantity": 0.03,
+        "Unit": "kg"
+      }
+    ]
+  },
+  {
+    "Name": "Spaghetti Bolognese",
+    "Description": "Spaghetti with rich beef and tomato sauce",
+    "Price": 13.5,
+    "IsAvailable": true,
+    "Image": "images/spaghetti-bolognese.jpg",
+    "Ingredients": [
+      {
+        "Name": "Spaghetti",
+        "Quantity": 0.2,
+        "Unit": "kg"
+      },
+      {
+        "Name": "Ground Beef",
+        "Quantity": 0.15,
+        "Unit": "kg"
+      },
+      {
+        "Name": "Tomato Sauce",
+        "Quantity": 0.15,
+        "Unit": "kg"
+      }
+    ]
+  },
+  {
+    "Name": "Chicken Burger",
+    "Description": "Grilled chicken breast with lettuce, tomato, and mayo",
+    "Price": 11.0,
+    "IsAvailable": true,
+    "Image": "images/chicken-burger.jpg",
+    "Ingredients": [
+      {
+        "Name": "Chicken Breast",
+        "Quantity": 0.18,
+        "Unit": "kg"
+      },
+      {
+        "Name": "Lettuce",
+        "Quantity": 2,
+        "Unit": "pcs"
+      },
+      {
+        "Name": "Tomato",
+        "Quantity": 1,
+        "Unit": "pcs"
+      },
+      {
+        "Name": "Mayonnaise",
+        "Quantity": 20,
+        "Unit": "g"
+      }
+    ]
+  },
+  {
+    "Name": "Veggie Wrap",
+    "Description": "Tortilla filled with grilled vegetables and hummus",
+    "Price": 8.5,
+    "IsAvailable": true,
+    "Image": "images/veggie-wrap.jpg",
+    "Ingredients": [
+      {
+        "Name": "Tortilla",
+        "Quantity": 1,
+        "Unit": "pcs"
+      },
+      {
+        "Name": "Grilled Vegetables",
+        "Quantity": 0.15,
+        "Unit": "kg"
+      },
+      {
+        "Name": "Hummus",
+        "Quantity": 30,
+        "Unit": "g"
+      }
+    ]
+  },
+  {
+    "Name": "Cheeseburger",
+    "Description": "Beef patty with cheddar, lettuce, tomato, and ketchup",
+    "Price": 12.0,
+    "IsAvailable": true,
+    "Image": "images/cheese-burger.jpg",
+    "Ingredients": [
+      {
+        "Name": "Beef Patty",
+        "Quantity": 0.2,
+        "Unit": "kg"
+      },
+      {
+        "Name": "Cheddar Cheese",
+        "Quantity": 0.05,
+        "Unit": "kg"
+      },
+      {
+        "Name": "Lettuce",
+        "Quantity": 2,
+        "Unit": "pcs"
+      },
+      {
+        "Name": "Tomato",
+        "Quantity": 1,
+        "Unit": "pcs"
+      },
+      {
+        "Name": "Ketchup",
+        "Quantity": 20,
+        "Unit": "g"
+      }
+    ]
+  },
+  {
+    "Name": "Mushroom Soup",
+    "Description": "Creamy mushroom soup served with croutons",
+    "Price": 7.5,
+    "IsAvailable": true,
+    "Image": "images/mushroom-soup.jpg",
+    "Ingredients": [
+      {
+        "Name": "Mushrooms",
+        "Quantity": 0.2,
+        "Unit": "kg"
+      },
+      {
+        "Name": "Cream",
+        "Quantity": 50,
+        "Unit": "ml"
+      },
+      {
+        "Name": "Croutons",
+        "Quantity": 0.03,
+        "Unit": "kg"
+      }
+    ]
+  }
+]

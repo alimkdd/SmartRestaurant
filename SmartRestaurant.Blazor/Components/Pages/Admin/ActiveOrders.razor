@@ -1,0 +1,84 @@
+﻿@using SmartRestaurant.Application.Interfaces
+@using SmartRestaurant.Domain.Models
+@using SmartRestaurant.Domain.Enums
+@inject IOrderService OrderService
+
+<div class="card mb-4">
+    <div class="card-body">
+        <h5>📦 Active Orders</h5>
+
+        @if (!Orders.Any())
+        {
+            <p class="text-muted">No active orders.</p>
+        }
+        else
+        {
+            <div class="table-responsive">
+                <table class="table table-hover align-middle">
+                    <thead>
+                        <tr>
+                            <th>Order</th>
+                            <th>Customer</th>
+                            <th>Status</th>
+                            <th>Items</th>
+                            <th style="width:180px">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var order in Orders)
+                        {
+                            <tr>
+                                <td><code>@order.Id.ToString().Substring(0, 8)</code></td>
+                                <td><code>@order.CustomerId.ToString().Substring(0, 8)</code></td>
+                                <td><span class="badge bg-@GetStatusColor(order.Status)">@order.Status</span></td>
+                                <td>
+                                    @foreach (var item in order.Items)
+                                    {
+                                        var menuItem = MenuItems.FirstOrDefault(m => m.Id == item.MenuItemId);
+                                        <div><strong>@menuItem?.Name</strong> × @item.Quantity</div>
+                                    }
+                                </td>
+                                <td>
+                                    @if (order.Status == OrderStatus.Pending)
+                                    {
+                                        <button class="btn btn-success btn-sm me-1" @onclick="() => UpdateOrderStatus(order, OrderStatus.InProgress)">Start</button>
+                                    }
+                                    @if (order.Status == OrderStatus.InProgress)
+                                    {
+                                        <button class="btn btn-primary btn-sm" @onclick="() => UpdateOrderStatus(order, OrderStatus.Completed)">Complete</button>
+                                    }
+                                    @if (order.Status == OrderStatus.Completed)
+                                    {
+                                        <span class="text-success fw-bold">✓ Done</span>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter] public List<Order> Orders { get; set; } = new();
+    [Parameter] public List<MenuItem> MenuItems { get; set; } = new();
+
+    [Parameter] public EventCallback OnOrdersChanged { get; set; }
+
+    private string GetStatusColor(OrderStatus status) => status switch
+    {
+        OrderStatus.Pending => "warning",
+        OrderStatus.InProgress => "info",
+        OrderStatus.Completed => "success",
+        _ => "secondary"
+    };
+
+    private async Task UpdateOrderStatus(Order order, OrderStatus status)
+    {
+        order.Status = status;
+        await OrderService.UpdateAsync(order);
+        await OnOrdersChanged.InvokeAsync();
+    }
+}

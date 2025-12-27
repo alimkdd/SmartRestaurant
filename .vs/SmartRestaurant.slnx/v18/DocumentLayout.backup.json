@@ -1,0 +1,863 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7A4A546D-43AD-BA15-84C7-597CC0767D06}|SmartRestaurant.Infrastructure\\SmartRestaurant.Infrastructure.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.infrastructure\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A4A546D-43AD-BA15-84C7-597CC0767D06}|SmartRestaurant.Infrastructure\\SmartRestaurant.Infrastructure.csproj|solutionrelative:smartrestaurant.infrastructure\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.blazor\\components\\pages\\admin\\admindashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|solutionrelative:smartrestaurant.blazor\\components\\pages\\admin\\admindashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.blazor\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|solutionrelative:smartrestaurant.blazor\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.blazor\\components\\pages\\auth\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|solutionrelative:smartrestaurant.blazor\\components\\pages\\auth\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.blazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|solutionrelative:smartrestaurant.blazor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.application\\validations\\loginrequestmodelvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|solutionrelative:smartrestaurant.application\\validations\\loginrequestmodelvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.application\\services\\caching\\cacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|solutionrelative:smartrestaurant.application\\services\\caching\\cacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.application\\interfaces\\abstractions\\caching\\icacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|solutionrelative:smartrestaurant.application\\interfaces\\abstractions\\caching\\icacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.blazor\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|solutionrelative:smartrestaurant.blazor\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C66E3DDC-D8A5-92A8-2374-833711A269C0}|SmartRestaurant.API\\SmartRestaurant.API.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C66E3DDC-D8A5-92A8-2374-833711A269C0}|SmartRestaurant.API\\SmartRestaurant.API.csproj|solutionrelative:smartrestaurant.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.application\\services\\authentication\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|solutionrelative:smartrestaurant.application\\services\\authentication\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.application\\common\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|solutionrelative:smartrestaurant.application\\common\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.blazor\\components\\pages\\auth\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|solutionrelative:smartrestaurant.blazor\\components\\pages\\auth\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.application\\validations\\registerrequestmodelvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|solutionrelative:smartrestaurant.application\\validations\\registerrequestmodelvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.application\\dtos\\requests\\registerrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|solutionrelative:smartrestaurant.application\\dtos\\requests\\registerrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.application\\validations\\refreshtokenrequestmodelvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|solutionrelative:smartrestaurant.application\\validations\\refreshtokenrequestmodelvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.application\\dtos\\requests\\refreshtokenrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|solutionrelative:smartrestaurant.application\\dtos\\requests\\refreshtokenrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.application\\dtos\\requests\\loginrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|solutionrelative:smartrestaurant.application\\dtos\\requests\\loginrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.application\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|solutionrelative:smartrestaurant.application\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C66E3DDC-D8A5-92A8-2374-833711A269C0}|SmartRestaurant.API\\SmartRestaurant.API.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C66E3DDC-D8A5-92A8-2374-833711A269C0}|SmartRestaurant.API\\SmartRestaurant.API.csproj|solutionrelative:smartrestaurant.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C66E3DDC-D8A5-92A8-2374-833711A269C0}|SmartRestaurant.API\\SmartRestaurant.API.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.api\\controllers\\chatbotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C66E3DDC-D8A5-92A8-2374-833711A269C0}|SmartRestaurant.API\\SmartRestaurant.API.csproj|solutionrelative:smartrestaurant.api\\controllers\\chatbotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C66E3DDC-D8A5-92A8-2374-833711A269C0}|SmartRestaurant.API\\SmartRestaurant.API.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C66E3DDC-D8A5-92A8-2374-833711A269C0}|SmartRestaurant.API\\SmartRestaurant.API.csproj|solutionrelative:smartrestaurant.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C66E3DDC-D8A5-92A8-2374-833711A269C0}|SmartRestaurant.API\\SmartRestaurant.API.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.api\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C66E3DDC-D8A5-92A8-2374-833711A269C0}|SmartRestaurant.API\\SmartRestaurant.API.csproj|solutionrelative:smartrestaurant.api\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C66E3DDC-D8A5-92A8-2374-833711A269C0}|SmartRestaurant.API\\SmartRestaurant.API.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.api\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C66E3DDC-D8A5-92A8-2374-833711A269C0}|SmartRestaurant.API\\SmartRestaurant.API.csproj|solutionrelative:smartrestaurant.api\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C66E3DDC-D8A5-92A8-2374-833711A269C0}|SmartRestaurant.API\\SmartRestaurant.API.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.api\\controllers\\servicebasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C66E3DDC-D8A5-92A8-2374-833711A269C0}|SmartRestaurant.API\\SmartRestaurant.API.csproj|solutionrelative:smartrestaurant.api\\controllers\\servicebasecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.application\\services\\ai\\chatbotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|solutionrelative:smartrestaurant.application\\services\\ai\\chatbotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.blazor\\components\\pages\\admin\\menumanagement.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|solutionrelative:smartrestaurant.blazor\\components\\pages\\admin\\menumanagement.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.application\\services\\orders\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|solutionrelative:smartrestaurant.application\\services\\orders\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.blazor\\components\\pages\\admin\\aimenusuggestions.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|solutionrelative:smartrestaurant.blazor\\components\\pages\\admin\\aimenusuggestions.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.blazor\\components\\pages\\admin\\activeorders.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|solutionrelative:smartrestaurant.blazor\\components\\pages\\admin\\activeorders.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C66E3DDC-D8A5-92A8-2374-833711A269C0}|SmartRestaurant.API\\SmartRestaurant.API.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C66E3DDC-D8A5-92A8-2374-833711A269C0}|SmartRestaurant.API\\SmartRestaurant.API.csproj|solutionrelative:smartrestaurant.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.application\\services\\common\\servicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|solutionrelative:smartrestaurant.application\\services\\common\\servicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.application\\services\\menu\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|solutionrelative:smartrestaurant.application\\services\\menu\\menuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.application\\services\\inventory\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|solutionrelative:smartrestaurant.application\\services\\inventory\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.blazor\\components\\pages\\orders.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|solutionrelative:smartrestaurant.blazor\\components\\pages\\orders.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.blazor\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|solutionrelative:smartrestaurant.blazor\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.application\\services\\authentication\\customauthstateprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|solutionrelative:smartrestaurant.application\\services\\authentication\\customauthstateprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.blazor\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|solutionrelative:smartrestaurant.blazor\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.blazor\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|solutionrelative:smartrestaurant.blazor\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.blazor\\components\\pages\\menu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|solutionrelative:smartrestaurant.blazor\\components\\pages\\menu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.blazor\\components\\pages\\admin\\admininventory.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|solutionrelative:smartrestaurant.blazor\\components\\pages\\admin\\admininventory.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.blazor\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{30D1C934-09A3-886B-C73A-C139CCF39D01}|SmartRestaurant.Blazor\\SmartRestaurant.Blazor.csproj|solutionrelative:smartrestaurant.blazor\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A4A546D-43AD-BA15-84C7-597CC0767D06}|SmartRestaurant.Infrastructure\\SmartRestaurant.Infrastructure.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.infrastructure\\common\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A4A546D-43AD-BA15-84C7-597CC0767D06}|SmartRestaurant.Infrastructure\\SmartRestaurant.Infrastructure.csproj|solutionrelative:smartrestaurant.infrastructure\\common\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Infrastructure\\Migrations\\20251225154949_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SmartRestaurant.Infrastructure\\Migrations\\20251225154949_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1222C4E9-9169-D567-A5F5-3670FBA9F2BF}|SmartRestaurant.Domain\\SmartRestaurant.Domain.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.domain\\enums\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1222C4E9-9169-D567-A5F5-3670FBA9F2BF}|SmartRestaurant.Domain\\SmartRestaurant.Domain.csproj|solutionrelative:smartrestaurant.domain\\enums\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|c:\\users\\user\\source\\repos\\smartrestaurant\\smartrestaurant.application\\common\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{491FCAAD-7F4A-0CDC-369D-5BC8B553D9AA}|SmartRestaurant.Application\\SmartRestaurant.Application.csproj|solutionrelative:smartrestaurant.application\\common\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 39,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "SmartRestaurant.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAADwvxwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T09:06:55.191Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Services\\Authentication\\AuthService.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Application\\Services\\Authentication\\AuthService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Services\\Authentication\\AuthService.cs",
+              "RelativeToolTip": "SmartRestaurant.Application\\Services\\Authentication\\AuthService.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAcwGQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T14:44:46.193Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Register.razor",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Pages\\Auth\\Register.razor",
+              "RelativeDocumentMoniker": "SmartRestaurant.Blazor\\Components\\Pages\\Auth\\Register.razor",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Pages\\Auth\\Register.razor",
+              "RelativeToolTip": "SmartRestaurant.Blazor\\Components\\Pages\\Auth\\Register.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-25T15:55:34.144Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "CustomAuthStateProvider.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Services\\Authentication\\CustomAuthStateProvider.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Application\\Services\\Authentication\\CustomAuthStateProvider.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Services\\Authentication\\CustomAuthStateProvider.cs",
+              "RelativeToolTip": "SmartRestaurant.Application\\Services\\Authentication\\CustomAuthStateProvider.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAowHQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T14:44:57.566Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ServiceBase.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Services\\Common\\ServiceBase.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Application\\Services\\Common\\ServiceBase.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Services\\Common\\ServiceBase.cs",
+              "RelativeToolTip": "SmartRestaurant.Application\\Services\\Common\\ServiceBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T22:07:29.807Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminDashboard.razor",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Pages\\Admin\\AdminDashboard.razor",
+              "RelativeDocumentMoniker": "SmartRestaurant.Blazor\\Components\\Pages\\Admin\\AdminDashboard.razor",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Pages\\Admin\\AdminDashboard.razor",
+              "RelativeToolTip": "SmartRestaurant.Blazor\\Components\\Pages\\Admin\\AdminDashboard.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-25T14:40:58.88Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ICacheService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Interfaces\\Abstractions\\Caching\\ICacheService.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Application\\Interfaces\\Abstractions\\Caching\\ICacheService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Interfaces\\Abstractions\\Caching\\ICacheService.cs",
+              "RelativeToolTip": "SmartRestaurant.Application\\Interfaces\\Abstractions\\Caching\\ICacheService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAADwvwoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T15:36:40.036Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CacheService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Services\\Caching\\CacheService.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Application\\Services\\Caching\\CacheService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Services\\Caching\\CacheService.cs",
+              "RelativeToolTip": "SmartRestaurant.Application\\Services\\Caching\\CacheService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAkwCsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T15:36:44.174Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.razor",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Pages\\Auth\\Login.razor",
+              "RelativeDocumentMoniker": "SmartRestaurant.Blazor\\Components\\Pages\\Auth\\Login.razor",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Pages\\Auth\\Login.razor",
+              "RelativeToolTip": "SmartRestaurant.Blazor\\Components\\Pages\\Auth\\Login.razor",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAB4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-25T16:27:17.719Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.API\\appsettings.json",
+              "RelativeDocumentMoniker": "SmartRestaurant.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.API\\appsettings.json",
+              "RelativeToolTip": "SmartRestaurant.API\\appsettings.json",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-25T18:16:39.441Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Program.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Blazor\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Program.cs",
+              "RelativeToolTip": "SmartRestaurant.Blazor\\Program.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAMwCUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T09:28:27.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Application\\Interfaces\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "SmartRestaurant.Application\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T14:39:58.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RefreshTokenRequestModelValidator.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Validations\\RefreshTokenRequestModelValidator.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Application\\Validations\\RefreshTokenRequestModelValidator.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Validations\\RefreshTokenRequestModelValidator.cs",
+              "RelativeToolTip": "SmartRestaurant.Application\\Validations\\RefreshTokenRequestModelValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T09:29:19.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RefreshTokenRequestModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Dtos\\Requests\\RefreshTokenRequestModel.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Application\\Dtos\\Requests\\RefreshTokenRequestModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Dtos\\Requests\\RefreshTokenRequestModel.cs",
+              "RelativeToolTip": "SmartRestaurant.Application\\Dtos\\Requests\\RefreshTokenRequestModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T09:20:01.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginRequestModelValidator.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Validations\\LoginRequestModelValidator.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Application\\Validations\\LoginRequestModelValidator.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Validations\\LoginRequestModelValidator.cs",
+              "RelativeToolTip": "SmartRestaurant.Application\\Validations\\LoginRequestModelValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T09:28:54.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Infrastructure\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Infrastructure\\Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Infrastructure\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "SmartRestaurant.Infrastructure\\Context\\AppDbContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAYwBkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T22:20:18.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Site.css",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\wwwroot\\css\\Site.css",
+              "RelativeDocumentMoniker": "SmartRestaurant.Blazor\\wwwroot\\css\\Site.css",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\wwwroot\\css\\Site.css",
+              "RelativeToolTip": "SmartRestaurant.Blazor\\wwwroot\\css\\Site.css",
+              "ViewState": "AgIAAAUDAAAAAAAAAAAhwBkDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-27T09:31:30.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RegisterRequestModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Dtos\\Requests\\RegisterRequestModel.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Application\\Dtos\\Requests\\RegisterRequestModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Dtos\\Requests\\RegisterRequestModel.cs",
+              "RelativeToolTip": "SmartRestaurant.Application\\Dtos\\Requests\\RegisterRequestModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T09:18:29.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\appsettings.json",
+              "RelativeDocumentMoniker": "SmartRestaurant.Blazor\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\appsettings.json",
+              "RelativeToolTip": "SmartRestaurant.Blazor\\appsettings.json",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-24T23:14:29.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Common\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Application\\Common\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Common\\ServiceRegistration.cs",
+              "RelativeToolTip": "SmartRestaurant.Application\\Common\\ServiceRegistration.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAowC8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T09:34:47.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RegisterRequestModelValidator.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Validations\\RegisterRequestModelValidator.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Application\\Validations\\RegisterRequestModelValidator.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Validations\\RegisterRequestModelValidator.cs",
+              "RelativeToolTip": "SmartRestaurant.Application\\Validations\\RegisterRequestModelValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T09:29:04.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LoginRequestModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Dtos\\Requests\\LoginRequestModel.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Application\\Dtos\\Requests\\LoginRequestModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Dtos\\Requests\\LoginRequestModel.cs",
+              "RelativeToolTip": "SmartRestaurant.Application\\Dtos\\Requests\\LoginRequestModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T09:19:03.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ChatbotController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.API\\Controllers\\ChatbotController.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.API\\Controllers\\ChatbotController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.API\\Controllers\\ChatbotController.cs",
+              "RelativeToolTip": "SmartRestaurant.API\\Controllers\\ChatbotController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T09:06:38.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.API\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.API\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.API\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "SmartRestaurant.API\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T09:08:01.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "InventoryController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.API\\Controllers\\InventoryController.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.API\\Controllers\\InventoryController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.API\\Controllers\\InventoryController.cs",
+              "RelativeToolTip": "SmartRestaurant.API\\Controllers\\InventoryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T09:07:43.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.API\\Controllers\\MenuController.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.API\\Controllers\\MenuController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.API\\Controllers\\MenuController.cs",
+              "RelativeToolTip": "SmartRestaurant.API\\Controllers\\MenuController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T09:07:52.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ServiceBaseController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.API\\Controllers\\ServiceBaseController.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.API\\Controllers\\ServiceBaseController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.API\\Controllers\\ServiceBaseController.cs",
+              "RelativeToolTip": "SmartRestaurant.API\\Controllers\\ServiceBaseController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-26T09:07:18.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ChatbotService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Services\\AI\\ChatbotService.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Application\\Services\\AI\\ChatbotService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Services\\AI\\ChatbotService.cs",
+              "RelativeToolTip": "SmartRestaurant.Application\\Services\\AI\\ChatbotService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T18:17:27.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MenuManagement.razor",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Pages\\Admin\\MenuManagement.razor",
+              "RelativeDocumentMoniker": "SmartRestaurant.Blazor\\Components\\Pages\\Admin\\MenuManagement.razor",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Pages\\Admin\\MenuManagement.razor",
+              "RelativeToolTip": "SmartRestaurant.Blazor\\Components\\Pages\\Admin\\MenuManagement.razor",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAowJIAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-25T21:29:55.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Services\\Orders\\OrderService.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Application\\Services\\Orders\\OrderService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Services\\Orders\\OrderService.cs",
+              "RelativeToolTip": "SmartRestaurant.Application\\Services\\Orders\\OrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T21:08:54.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AIMenuSuggestions.razor",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Pages\\Admin\\AIMenuSuggestions.razor",
+              "RelativeDocumentMoniker": "SmartRestaurant.Blazor\\Components\\Pages\\Admin\\AIMenuSuggestions.razor",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Pages\\Admin\\AIMenuSuggestions.razor",
+              "RelativeToolTip": "SmartRestaurant.Blazor\\Components\\Pages\\Admin\\AIMenuSuggestions.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-25T21:30:56.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ActiveOrders.razor",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Pages\\Admin\\ActiveOrders.razor",
+              "RelativeDocumentMoniker": "SmartRestaurant.Blazor\\Components\\Pages\\Admin\\ActiveOrders.razor",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Pages\\Admin\\ActiveOrders.razor",
+              "RelativeToolTip": "SmartRestaurant.Blazor\\Components\\Pages\\Admin\\ActiveOrders.razor",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAFMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-25T21:30:31.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.API\\Program.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.API\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.API\\Program.cs",
+              "RelativeToolTip": "SmartRestaurant.API\\Program.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T22:05:50.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "MenuService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Services\\Menu\\MenuService.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Application\\Services\\Menu\\MenuService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Services\\Menu\\MenuService.cs",
+              "RelativeToolTip": "SmartRestaurant.Application\\Services\\Menu\\MenuService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T21:21:04.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "InventoryService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Services\\Inventory\\InventoryService.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Application\\Services\\Inventory\\InventoryService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Services\\Inventory\\InventoryService.cs",
+              "RelativeToolTip": "SmartRestaurant.Application\\Services\\Inventory\\InventoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T21:18:16.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Orders.razor",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Pages\\Orders.razor",
+              "RelativeDocumentMoniker": "SmartRestaurant.Blazor\\Components\\Pages\\Orders.razor",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Pages\\Orders.razor",
+              "RelativeToolTip": "SmartRestaurant.Blazor\\Components\\Pages\\Orders.razor",
+              "ViewState": "AgIAAOoAAAAAAAAAAAAgwAMBAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-25T17:51:38.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "SmartRestaurant.Blazor\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "SmartRestaurant.Blazor\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-25T16:37:25.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "SmartRestaurant.Blazor\\Components\\Routes.razor",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Routes.razor",
+              "RelativeToolTip": "SmartRestaurant.Blazor\\Components\\Routes.razor",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAowFgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-25T15:52:25.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\App.razor",
+              "RelativeDocumentMoniker": "SmartRestaurant.Blazor\\Components\\App.razor",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\App.razor",
+              "RelativeToolTip": "SmartRestaurant.Blazor\\Components\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-25T16:59:58.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "AdminInventory.razor",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Pages\\Admin\\AdminInventory.razor",
+              "RelativeDocumentMoniker": "SmartRestaurant.Blazor\\Components\\Pages\\Admin\\AdminInventory.razor",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Pages\\Admin\\AdminInventory.razor",
+              "RelativeToolTip": "SmartRestaurant.Blazor\\Components\\Pages\\Admin\\AdminInventory.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-25T14:46:21.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Menu.razor",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Pages\\Menu.razor",
+              "RelativeDocumentMoniker": "SmartRestaurant.Blazor\\Components\\Pages\\Menu.razor",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Pages\\Menu.razor",
+              "RelativeToolTip": "SmartRestaurant.Blazor\\Components\\Pages\\Menu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-25T16:24:45.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "DbSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Infrastructure\\Common\\DbSeeder.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Infrastructure\\Common\\DbSeeder.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Infrastructure\\Common\\DbSeeder.cs",
+              "RelativeToolTip": "SmartRestaurant.Infrastructure\\Common\\DbSeeder.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAgwIQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T15:19:05.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "SmartRestaurant.Blazor\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Blazor\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "SmartRestaurant.Blazor\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-25T14:47:43.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "20251225154949_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Infrastructure\\Migrations\\20251225154949_InitialMigration.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Infrastructure\\Migrations\\20251225154949_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Infrastructure\\Migrations\\20251225154949_InitialMigration.cs",
+              "RelativeToolTip": "SmartRestaurant.Infrastructure\\Migrations\\20251225154949_InitialMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T15:49:50.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "OrderStatus.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Domain\\Enums\\OrderStatus.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Domain\\Enums\\OrderStatus.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Domain\\Enums\\OrderStatus.cs",
+              "RelativeToolTip": "SmartRestaurant.Domain\\Enums\\OrderStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T22:13:31.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "GlobalExceptionHandler.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Common\\GlobalExceptionHandler.cs",
+              "RelativeDocumentMoniker": "SmartRestaurant.Application\\Common\\GlobalExceptionHandler.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SmartRestaurant\\SmartRestaurant.Application\\Common\\GlobalExceptionHandler.cs",
+              "RelativeToolTip": "SmartRestaurant.Application\\Common\\GlobalExceptionHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T22:32:27.534Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

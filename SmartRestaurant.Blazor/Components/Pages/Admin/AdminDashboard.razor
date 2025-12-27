@@ -1,0 +1,44 @@
+﻿@page "/admin"
+@attribute [Authorize(Roles = "Admin")]
+@inject IMenuService MenuService
+@inject IOrderService OrderService
+@inject IChatbotService ChatbotService
+@inject NavigationManager NavigationManager
+@using SmartRestaurant.Application.Interfaces
+@using SmartRestaurant.Application.Interfaces.Abstractions.AI
+@using SmartRestaurant.Blazor.Components.Pages.Admin
+@using SmartRestaurant.Domain.Models
+
+<div class="admin-header mb-4">
+    <h3>🎯 Admin Dashboard</h3>
+    <p class="mb-0">Manage your restaurant operations</p>
+</div>
+
+@if (isLoading)
+{
+    <div class="text-center mt-5">
+        <div class="spinner-border text-primary"></div>
+    </div>
+}
+else
+{
+    <MenuManagement MenuItems="menuItems" OnChange="ReloadMenu" />
+    <ActiveOrders Orders="orders" MenuItems="menuItems" OnOrdersChanged="ReloadOrders" />
+    <AIMenuSuggestions MenuItems="menuItems" />
+}
+
+@code {
+    private List<MenuItem> menuItems = new();
+    private List<Order> orders = new();
+    private bool isLoading = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        menuItems = await MenuService.GetAllAsync();
+        orders = await OrderService.GetAllAsync();
+        isLoading = false;
+    }
+
+    private async Task ReloadMenu() => menuItems = await MenuService.GetAllAsync();
+    private async Task ReloadOrders() => orders = await OrderService.GetAllAsync();
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "Name": "Tomato",
+    "Quantity": 0.2,
+    "Unit": "kg",
+    "MenuItemId": "3f7c1d9a-6e9a-4c4b-b6c2-8b2c9f3e5a41"
+  },
+  {
+    "Name": "Mozzarella",
+    "Quantity": 0.15,
+    "Unit": "kg",
+    "MenuItemId": "3f7c1d9a-6e9a-4c4b-b6c2-8b2c9f3e5a41"
+  },
+  {
+    "Name": "Basil",
+    "Quantity": 5,
+    "Unit": "pcs",
+    "MenuItemId": "3f7c1d9a-6e9a-4c4b-b6c2-8b2c9f3e5a41"
+  },
+  {
+    "Name": "Romaine Lettuce",
+    "Quantity": 0.1,
+    "Unit": "kg",
+    "MenuItemId": "a9b4e2c7-1f6d-4e3a-9c1a-2d8b7f6e4c90"
+  },
+  {
+    "Name": "Croutons",
+    "Quantity": 0.05,
+    "Unit": "kg",
+    "MenuItemId": "a9b4e2c7-1f6d-4e3a-9c1a-2d8b7f6e4c90"
+  },
+  {
+    "Name": "Parmesan",
+    "Quantity": 0.03,
+    "Unit": "kg",
+    "MenuItemId": "a9b4e2c7-1f6d-4e3a-9c1a-2d8b7f6e4c90"
+  }
+]

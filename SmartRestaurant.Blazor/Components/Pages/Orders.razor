@@ -1,0 +1,267 @@
+﻿@page "/orders"
+@attribute [Authorize(Roles = "Admin,Customer")]
+@using SmartRestaurant.Application.Interfaces
+@using SmartRestaurant.Application.Interfaces.Abstractions.AI
+@using SmartRestaurant.Application.Services.Menu
+@using SmartRestaurant.Application.Services.Orders
+@using SmartRestaurant.Infrastructure.Context
+@inject IMenuService MenuService
+@inject IOrderService OrderService
+@inject IChatbotService ChatbotService
+@inject AppDbContext DbContext
+@inject AuthenticationStateProvider AuthStateProvider
+
+<div class="menu-header">
+    <h3>🛒 Place Your Order</h3>
+    <p style="margin: 0.5rem 0 0 0; opacity: 0.9; font-size: 1.125rem;">Select your favorite items</p>
+</div>
+
+@if (isLoading)
+{
+    <div class="loading-container">
+        <div class="loading-spinner"></div>
+    </div>
+}
+else if (menuItems?.Any() != true)
+{
+    <div class="alert alert-info">
+        <p style="margin: 0;">📭 No menu items available for ordering at the moment.</p>
+    </div>
+}
+else
+{
+    <div class="menu-grid">
+        @foreach (var item in menuItems)
+        {
+            var quantity = cart[item.Id];
+
+            <div class="menu-card" style="@(quantity > 0 ? "border: 2px solid #27ae60;" : "")">
+
+                @if (!string.IsNullOrEmpty(item.Image))
+                {
+                    <img src="@item.Image" alt="@item.Name" class="menu-card-image" />
+                }
+
+                <div style="display: flex; justify-content: space-between; align-items: start;">
+                    <h4>@item.Name</h4>
+                    @if (quantity > 0)
+                    {
+                        <span style="background-color: #27ae60; color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.875rem; font-weight: 600;">
+                            ✓ Added
+                        </span>
+                    }
+                </div>
+                <p style="min-height: 60px;">@item.Description</p>
+                <div class="price">$@item.Price.ToString("F2")</div>
+
+                <div style="display: flex; align-items: center; gap: 1rem; margin-top: 1rem;">
+                    <label style="font-weight: 600; color: #2c3e50;">Quantity:</label>
+                    <input type="number"
+                           min="0"
+                           max="10"
+                           style="width: 100px;"
+                           @bind="cart[item.Id]"
+                           @oninput="@((e) => UpdateQuantity(item.Id, e.Value?.ToString()))" />
+                </div>
+
+                @if (quantity > 0)
+                {
+                    <div style="margin-top: 0.5rem; color: #27ae60; font-weight: 600;">
+                        Subtotal: $@((item.Price * quantity).ToString("F2"))
+                    </div>
+                }
+            </div>
+        }
+    </div>
+
+    <div style="position: sticky; bottom: 0; background-color: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 -4px 12px rgba(0,0,0,0.1); margin-top: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h4 style="margin: 0;">Total Items: @cart.Values.Sum()</h4>
+            <h4 style="margin: 0; color: #27ae60;">
+                Total: $@CalculateTotal().ToString("F2")
+            </h4>
+        </div>
+
+        <div class="order-actions">
+            <button class="btn btn-success"
+                    @onclick="PlaceOrder"
+                    disabled="@(!cart.Any(c => c.Value > 0))">
+                🎯 Place Order
+            </button>
+            <button class="btn btn-info"
+                    @onclick="GetAIRecommendations"
+                    disabled="@isGettingRecommendations">
+                @if (isGettingRecommendations)
+                {
+                    <span>⏳ Getting Recommendations...</span>
+                }
+                else
+                {
+                    <span>🤖 AI Recommendations</span>
+                }
+            </button>
+        </div>
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(aiRecommendation))
+{
+    <div class="ai-recommendation">
+        <h5>AI Recommendations</h5>
+        <p>@aiRecommendation</p>
+    </div>
+}
+
+@if (orderSuccess)
+{
+    <div class="alert alert-success" style="position: fixed; top: 20px; right: 20px; z-index: 1000; min-width: 300px;">
+        <strong>✅ Success!</strong> Your order has been placed successfully!
+    </div>
+}
+
+@code {
+    private List<SmartRestaurant.Domain.Models.MenuItem>? menuItems;
+    private Dictionary<Guid, int> cart = new();
+    private bool isLoading = true;
+    private bool isGettingRecommendations = false;
+    private string? aiRecommendation;
+    private bool orderSuccess = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            menuItems = await MenuService.GetAllAsync();
+            foreach (var item in menuItems)
+            {
+                cart[item.Id] = 0;
+            }
+        }
+        catch (Exception ex)
+        {
+            menuItems = new List<SmartRestaurant.Domain.Models.MenuItem>();
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void UpdateQuantity(Guid itemId, string? value)
+    {
+        if (int.TryParse(value, out int quantity))
+        {
+            cart[itemId] = Math.Max(0, Math.Min(10, quantity));
+        }
+    }
+
+    private decimal CalculateTotal()
+    {
+        if (menuItems == null) return 0;
+
+        return cart.Where(c => c.Value > 0)
+            .Sum(c =>
+            {
+                var item = menuItems.FirstOrDefault(m => m.Id == c.Key);
+                return item != null ? item.Price * c.Value : 0;
+            });
+    }
+
+    private SmartRestaurant.Domain.Models.Order? lastOrder;
+
+    private async Task PlaceOrder()
+    {
+        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (!user.Identity?.IsAuthenticated ?? true)
+            return;
+
+        var userId = user.Claims.FirstOrDefault()!.Value;
+
+        var itemsToOrder = cart
+            .Where(c => c.Value > 0)
+            .Select(c =>
+            {
+                var menuItem = menuItems!.First(m => m.Id == c.Key);
+
+                return new SmartRestaurant.Domain.Models.OrderItem
+                {
+                    MenuItemId = c.Key,
+                    Quantity = c.Value,
+                    UnitPrice = menuItem.Price
+                };
+            })
+            .ToList();
+
+        if (!itemsToOrder.Any()) return;
+
+        var totalPrice = itemsToOrder.Sum(i => i.Quantity * i.UnitPrice);
+
+        var order = new SmartRestaurant.Domain.Models.Order
+        {
+            CustomerId = Guid.Parse(userId),
+            Items = itemsToOrder,
+            Status = SmartRestaurant.Domain.Enums.OrderStatus.Pending,
+            TotalPrice = totalPrice,
+            CreatedAt = DateTime.UtcNow
+        };
+
+        await OrderService.AddAsync(order);
+
+        lastOrder = order;
+        orderSuccess = true;
+
+        // Reset cart
+        foreach (var key in cart.Keys.ToList())
+            cart[key] = 0;
+
+        StateHasChanged();
+    }
+
+    private void ClosePopup()
+    {
+        orderSuccess = false;
+        lastOrder = null;
+    }
+
+    private async Task GetAIRecommendations()
+    {
+        isGettingRecommendations = true;
+
+        var selectedItems = cart.Where(c => c.Value > 0)
+            .Select(c => menuItems!.FirstOrDefault(m => m.Id == c.Key)?.Name)
+            .Where(n => n != null)
+            .ToList();
+
+        if (!selectedItems.Any())
+        {
+            aiRecommendation = "Please select some items first to get personalized recommendations!";
+            isGettingRecommendations = false;
+            return;
+        }
+
+        var prompt = $"Customer selected: {string.Join(", ", selectedItems)}. " +
+                     "Recommend additional menu items that complement their choices.";
+        aiRecommendation = await ChatbotService.Ask(prompt);
+        isGettingRecommendations = false;
+    }
+}
+
+@if (orderSuccess && lastOrder != null)
+{
+    <div class="order-popup-overlay">
+        <div class="order-popup-card">
+            <h3>✅ Order Placed!</h3>
+            <p>Thank you for your order, it has been successfully received.</p>
+
+            <div class="order-summary">
+                <p><strong>Order ID:</strong> @lastOrder.Id</p>
+                <p><strong>Total Items:</strong> @lastOrder.Items.Count</p>
+                <p><strong>Total Price:</strong> $@lastOrder.TotalPrice.ToString("F2")</p>
+            </div>
+
+            <button class="btn btn-success" @onclick="ClosePopup">Close</button>
+        </div>
+    </div>
+}

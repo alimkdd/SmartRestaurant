@@ -1,0 +1,159 @@
+﻿@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Authorization
+@using SmartRestaurant.Application.Services.Authentication
+@inject NavigationManager NavigationManager
+@inject AuthenticationStateProvider AuthStateProvider
+
+@if (showNav)
+{
+    <div class="top-row ps-3 navbar navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="">Smart Restaurant</a>
+            @if (!string.IsNullOrEmpty(userName))
+            {
+                <span class="text-light ms-3">Welcome, @userName!</span>
+            }
+        </div>
+    </div>
+
+    <input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+
+    <div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+        <nav class="flex-column">
+            @if (userRoles != null)
+            {
+                <!-- Customer menu -->
+                @if (userRoles.Contains("Customer") || userRoles.Contains("Admin"))
+                {
+                    <div class="nav-item px-3">
+                        <NavLink class="nav-link" href="menu">
+                            <i class="fas fa-utensils me-2"></i> Menu
+                        </NavLink>
+                    </div>
+                    <div class="nav-item px-3">
+                        <NavLink class="nav-link" href="orders">
+                            <i class="fas fa-shopping-basket me-2"></i> Orders
+                        </NavLink>
+                    </div>
+                }
+
+                <!-- Admin menu -->
+                @if (userRoles.Contains("Admin"))
+                {
+                    <div class="nav-item px-3">
+                        <NavLink class="nav-link" href="admin">
+                            <i class="fas fa-tachometer-alt me-2"></i> Admin
+                        </NavLink>
+                    </div>
+                }
+
+                <!-- Inventory menu -->
+                @if (userRoles.Contains("Staff") || userRoles.Contains("Admin"))
+                {
+                    <div class="nav-item px-3">
+                        <NavLink class="nav-link" href="admin/inventory">
+                            <i class="fas fa-boxes me-2"></i> Inventory
+                        </NavLink>
+                    </div>
+                }
+
+                <!-- Logout -->
+                <div class="nav-item px-3 mt-3">
+                    <button class="btn btn-danger w-100" @onclick="Logout">
+                        🚪 Logout
+                    </button>
+                </div>
+            }
+            else
+            {
+                <!-- Login link if not authenticated -->
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="">
+                        <i class="fas fa-sign-in-alt me-2"></i> Login
+                    </NavLink>
+                </div>
+            }
+        </nav>
+    </div>
+}
+
+@code {
+    private List<string>? userRoles;
+    private string? userName;
+    private bool showNav = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        UpdateNavVisibility(NavigationManager.Uri);
+
+        NavigationManager.LocationChanged += OnLocationChanged;
+
+        if (AuthStateProvider is CustomAuthStateProvider customProvider)
+        {
+            customProvider.AuthenticationStateChanged += OnAuthenticationStateChanged;
+        }
+
+        await LoadUserInfo();
+    }
+
+    private async Task LoadUserInfo()
+    {
+        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity?.IsAuthenticated == true)
+        {
+            userRoles = user.Claims
+                .Where(c => c.Type == System.Security.Claims.ClaimTypes.Role)
+                .Select(c => c.Value)
+                .ToList();
+
+            userName = user.Identity.Name ?? user.Claims.FirstOrDefault(c => c.Type == System.Security.Claims.ClaimTypes.Email)?.Value;
+        }
+        else
+        {
+            userRoles = null;
+            userName = null;
+        }
+
+        StateHasChanged();
+    }
+
+    private void OnLocationChanged(object? sender, LocationChangedEventArgs e)
+    {
+        UpdateNavVisibility(e.Location);
+    }
+
+    private void UpdateNavVisibility(string uri)
+    {
+        var path = NavigationManager.ToBaseRelativePath(uri).ToLower();
+        showNav = path != "login" && path != "register";
+        StateHasChanged();
+    }
+
+    private async void OnAuthenticationStateChanged(Task<AuthenticationState> task)
+    {
+        await LoadUserInfo();
+    }
+
+    private async Task Logout()
+    {
+        if (AuthStateProvider is CustomAuthStateProvider customProvider)
+        {
+            await customProvider.Logout();
+            customProvider.NotifyAuthenticationStateChanged();
+        }
+
+        NavigationManager.NavigateTo("/", true);
+    }
+
+    public void Dispose()
+    {
+        NavigationManager.LocationChanged -= OnLocationChanged;
+
+        if (AuthStateProvider is CustomAuthStateProvider customProvider)
+        {
+            customProvider.AuthenticationStateChanged -= OnAuthenticationStateChanged;
+        }
+    }
+}

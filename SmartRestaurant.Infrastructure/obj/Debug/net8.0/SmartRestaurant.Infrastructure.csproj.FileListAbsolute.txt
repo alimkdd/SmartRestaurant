@@ -1,0 +1,17 @@
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Infrastructure\bin\Debug\net8.0\SmartRestaurant.Infrastructure.deps.json
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Infrastructure\bin\Debug\net8.0\SmartRestaurant.Infrastructure.runtimeconfig.json
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Infrastructure\bin\Debug\net8.0\SmartRestaurant.Infrastructure.dll
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Infrastructure\bin\Debug\net8.0\SmartRestaurant.Infrastructure.pdb
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Infrastructure\bin\Debug\net8.0\SmartRestaurant.Domain.dll
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Infrastructure\bin\Debug\net8.0\SmartRestaurant.Domain.pdb
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Infrastructure\obj\Debug\net8.0\SmartRestaurant.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Infrastructure\obj\Debug\net8.0\SmartRestaurant.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Infrastructure\obj\Debug\net8.0\SmartRestaurant.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Infrastructure\obj\Debug\net8.0\SmartRestaurant.Infrastructure.AssemblyInfo.cs
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Infrastructure\obj\Debug\net8.0\SmartRestaurant.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Infrastructure\obj\Debug\net8.0\SmartRes.9F86EBF7.Up2Date
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Infrastructure\obj\Debug\net8.0\SmartRestaurant.Infrastructure.dll
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Infrastructure\obj\Debug\net8.0\refint\SmartRestaurant.Infrastructure.dll
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Infrastructure\obj\Debug\net8.0\SmartRestaurant.Infrastructure.pdb
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Infrastructure\obj\Debug\net8.0\SmartRestaurant.Infrastructure.genruntimeconfig.cache
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Infrastructure\obj\Debug\net8.0\ref\SmartRestaurant.Infrastructure.dll

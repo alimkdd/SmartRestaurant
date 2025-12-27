@@ -1,0 +1,14 @@
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Domain\bin\Debug\net8.0\SmartRestaurant.Domain.deps.json
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Domain\bin\Debug\net8.0\SmartRestaurant.Domain.runtimeconfig.json
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Domain\bin\Debug\net8.0\SmartRestaurant.Domain.dll
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Domain\bin\Debug\net8.0\SmartRestaurant.Domain.pdb
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Domain\obj\Debug\net8.0\SmartRestaurant.Domain.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Domain\obj\Debug\net8.0\SmartRestaurant.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Domain\obj\Debug\net8.0\SmartRestaurant.Domain.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Domain\obj\Debug\net8.0\SmartRestaurant.Domain.AssemblyInfo.cs
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Domain\obj\Debug\net8.0\SmartRestaurant.Domain.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Domain\obj\Debug\net8.0\SmartRestaurant.Domain.dll
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Domain\obj\Debug\net8.0\refint\SmartRestaurant.Domain.dll
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Domain\obj\Debug\net8.0\SmartRestaurant.Domain.pdb
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Domain\obj\Debug\net8.0\SmartRestaurant.Domain.genruntimeconfig.cache
+C:\Users\User\source\repos\SmartRestaurant\SmartRestaurant.Domain\obj\Debug\net8.0\ref\SmartRestaurant.Domain.dll

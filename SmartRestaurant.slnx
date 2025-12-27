@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="SmartRestaurant.API/SmartRestaurant.API.csproj" />
+  <Project Path="SmartRestaurant.Application/SmartRestaurant.Application.csproj" />
+  <Project Path="SmartRestaurant.Blazor/SmartRestaurant.Blazor.csproj" />
+  <Project Path="SmartRestaurant.Domain/SmartRestaurant.Domain.csproj" />
+  <Project Path="SmartRestaurant.Infrastructure/SmartRestaurant.Infrastructure.csproj" />
+</Solution>

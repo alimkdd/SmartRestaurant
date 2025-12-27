@@ -1,0 +1,96 @@
+﻿@page "/menu"
+@attribute [Authorize(Roles = "Admin,Customer")]
+@using SmartRestaurant.Application.Interfaces
+@using SmartRestaurant.Application.Interfaces.Abstractions.AI
+@using SmartRestaurant.Application.Services.Menu
+@inject IMenuService MenuService
+@inject IChatbotService ChatbotService
+
+<div class="menu-header">
+    <h3>🍽️ Our Menu</h3>
+    <p style="margin: 0.5rem 0 0 0; opacity: 0.9; font-size: 1.125rem;">Discover our delicious offerings</p>
+</div>
+
+@if (isLoading)
+{
+    <div class="loading-container">
+        <div class="loading-spinner"></div>
+    </div>
+}
+else if (menuItems?.Any() != true)
+{
+    <div class="alert alert-info">
+        <p style="margin: 0;">📭 No menu items available at the moment. Please check back later!</p>
+    </div>
+}
+else
+{
+    <div class="menu-grid">
+        @foreach (var item in menuItems)
+        {
+            <div class="menu-card">
+
+                @if (!string.IsNullOrEmpty(item.Image))
+                {
+                    <img src="@item.Image" alt="@item.Name" class="menu-card-image" />
+                }
+
+                <div style="display: flex; justify-content: space-between; align-items: start;">
+                    <h4>@item.Name</h4>
+                    <span style="background-color: #e8f5e9; color: #2e7d32; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.875rem; font-weight: 600;">
+                        Available
+                    </span>
+                </div>
+                <p style="min-height: 60px;">@item.Description</p>
+                <div class="price">$@item.Price.ToString("F2")</div>
+                <button class="btn btn-primary" style="width: 100%;" @onclick="() => Recommend(item.Id)">
+                    🔍 Get Recommendations
+                </button>
+            </div>
+        }
+    </div>
+
+}
+
+@if (!string.IsNullOrEmpty(aiRecommendation))
+{
+    <div class="ai-recommendation">
+        <h5>AI Recommendations</h5>
+        <p>@aiRecommendation</p>
+    </div>
+}
+
+@code {
+    private List<SmartRestaurant.Domain.Models.MenuItem>? menuItems;
+    private bool isLoading = true;
+    private string? aiRecommendation;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            menuItems = await MenuService.GetAllAsync();
+        }
+        catch (Exception ex)
+        {
+            // Log error
+            menuItems = new List<SmartRestaurant.Domain.Models.MenuItem>();
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private async Task Recommend(Guid menuItemId)
+    {
+        var item = menuItems?.FirstOrDefault(m => m.Id == menuItemId);
+        if (item == null) return;
+
+        aiRecommendation = "Loading recommendations...";
+        StateHasChanged();
+
+        var prompt = $"Recommend similar menu items to '{item.Name}' based on ingredients, taste, and customer preferences.";
+        aiRecommendation = await ChatbotService.Ask(prompt);
+    }
+}

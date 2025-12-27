@@ -1,0 +1,62 @@
+[
+  {
+    "Name": "Tomato",
+    "Quantity": 10,
+    "Unit": "kg",
+    "MinimumThreshold": 2
+  },
+  {
+    "Name": "Mozzarella",
+    "Quantity": 5,
+    "Unit": "kg",
+    "MinimumThreshold": 1
+  },
+  {
+    "Name": "Basil",
+    "Quantity": 100,
+    "Unit": "pcs",
+    "MinimumThreshold": 20
+  },
+  {
+    "Name": "Romaine Lettuce",
+    "Quantity": 8,
+    "Unit": "kg",
+    "MinimumThreshold": 2
+  },
+  {
+    "Name": "Croutons",
+    "Quantity": 4,
+    "Unit": "kg",
+    "MinimumThreshold": 1
+  },
+  {
+    "Name": "Parmesan",
+    "Quantity": 3,
+    "Unit": "kg",
+    "MinimumThreshold": 0.5
+  },
+  {
+    "Name": "Chicken Breast",
+    "Quantity": 15,
+    "Unit": "kg",
+    "MinimumThreshold": 3
+  },
+  {
+    "Name": "Olive Oil",
+    "Quantity": 20,
+    "Unit": "liters",
+    "MinimumThreshold": 5
+  },
+  {
+    "Name": "Salt",
+    "Quantity": 10,
+    "Unit": "kg",
+    "MinimumThreshold": 2
+  },
+  {
+    "Name": "Pepper",
+    "Quantity": 5,
+    "Unit": "kg",
+    "MinimumThreshold": 1
+  }
+]
